@@ -133,6 +133,7 @@ async def main():
 
         # Configure the Gemini Live Pipecat service
         llm = GeminiMultimodalLiveLLMService(
+            model="gemini-2.5-flash-native-audio-preview-12-2025",
             api_key=os.getenv("GOOGLE_API_KEY"),
             system_instruction=system_instruction,
             tools=tools,
